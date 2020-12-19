@@ -3,7 +3,7 @@
 
 Exemplo de código
 
-## Installation
+## Instalação
 
 Use no npm ou yarn, na raiz do projeto, para instalar as depêndencias do projeto.
 
@@ -13,7 +13,7 @@ ou
 yarn install
 ```
 
-## Usage
+## Uso
 
 ```javascript
 no arquivo index.js, apenas na primeira execução descomente 
@@ -24,7 +24,7 @@ await connection.sync({force:true});
 // as tabelas
 ```
 
-## Contributing
+## Contribuições
 Fique a vontade para alterar o projeto conforme necessidades, sem
 garantias. 
 
