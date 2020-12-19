@@ -1,0 +1,22 @@
+var numeros = [3,10,7,20,35,39,49,76,27,12,90,120];
+
+const newNumber = Math.floor(Math.random()*1000000);
+
+const prom = new Promise(function (resolve, reject) {
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] === newNumber) {
+            return reject('repetido');
+        } else {
+            numeros.push(newNumber);
+            return resolve(newNumber);
+        }
+    }
+});
+
+prom
+.then(result => {
+   console.log(result)
+})
+.catch(error => console.log(error));
+
+console.log('foi alterado',numeros);
